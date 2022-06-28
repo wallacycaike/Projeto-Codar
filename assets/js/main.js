@@ -28,3 +28,16 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+// SCROLL REVEAL
+
+const sr = ScrollReveal({
+    distance: '90px',
+    duration: 3000,
+})
+
+sr.reveal(`.home__data`, {origin: 'right', delay: 200})
+sr.reveal(`.home__img`, {origin: 'left', delay: 400})
+sr.reveal(`.about__home`, {origin: 'right', delay: 100})
+sr.reveal(`.about__contact`, {origin: 'left', delay: 200})
+sr.reveal(`.about__users`, {origin: 'bottom', delay: 400})

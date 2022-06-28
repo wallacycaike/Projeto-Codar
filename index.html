@@ -27,10 +27,10 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <i class="nav__item"><a href="#" class="nav__link">Início</a></i>
-                    <i class="nav__item"><a href="#" class="nav__link">Serviços</a></i>
-                    <i class="nav__item"><a href="#" class="nav__link">Contato</a></i>
-                    <i class="nav__item"><a href="#" class="nav__link">Login</a></i>
+                    <i class="nav__item"><a href="#Início" class="nav__link">Início</a></i>
+                    <i class="nav__item"><a href="#Serviços" class="nav__link">Serviços</a></i>
+                    <i class="nav__item"><a href="#Contato" class="nav__link">Contato</a></i>
+                    <i class="nav__item"><a href="#" class="nav__link" id="login">Login</a></i>
                 </ul>
                 <!-- <a href="#" class="button__login">Login</a> -->
 
@@ -49,7 +49,7 @@
 
     <!-- MAIN -->
     <main class="main">
-        <section class="home">
+        <section class="home" id="Início">
             <div class="home__container container">
                 <div class="home__img">
                     <img src="assets/image/video_call.png" alt="">
@@ -65,7 +65,7 @@
 
         <section class="about container">
 
-            <div class="about__home">
+            <div class="about__home" id="Serviços">
                 <div class="about__img">
                     <img src="assets/image/coding_.png" alt="">
                 </div>
@@ -83,8 +83,10 @@
 
             <div class="about__contact">
                 <p>Nossa equipe está à disposição!</p>
-                <input type="number" name="number" id="number" placeholder="Celular">
-                <a href="#" class="about__button">Ligamos para você</a>
+                <div class="about__call">
+                    <input type="number" name="number" id="number" placeholder="Celular">
+                    <a href="#" class="about__button">Ligamos para você</a>
+                </div>
             </div>
 
             <div class="about__users">
@@ -96,52 +98,55 @@
                         <span>
                             Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas superior em todos os aspectos.
                         </span>
-                        <span>Pedro Ferreira</span>
-                        <span>Construtora Minari</span>
+                        <h3>Pedro Ferreira</h3>
+                        <h4>Construtora Minari</h4>
                     </div>
                 </div>
                 <div class="about__user2">
-                    <img src="assets/image/usuario_mulher.png" alt="">
-                    <span>
-                        Processos bem simples e criação de um site exatamente como a minha escola queria!
-                    </span>
-                    <span>Maria Rita</span>
-                    <span>Escola Criança Feliz</span>
+                    <div class="about__img2">
+                        <img src="assets/image/usuario_mulher.png" alt="">
+                    </div>
+                    <div class="about__text2">
+                        <span>
+                            Processos bem simples e criação de um site exatamente como a minha escola queria!
+                        </span>
+                        <h3>Maria Rita</h3>
+                        <h4>Escola Criança Feliz</h4>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- FOOTER -->
-        <footer class="footer container">
-            <div class="footer__codar">
-                <h1 class="footer__logo">Codar.</h1>
-                <p>Criamos websites incríveis</p>
-            </div>
-
-            <div class="footer__about">
-                <h2>Sobre</h2>
-                <span>Amamos criar soluções <br> e entregar sites incríveis</span>
-            </div>
-
-            <div class="footer__contact">
-                <h2>Contato</h2>
-                <span>123 Av. Manjar - Nárnia</span>
-                <span>+55 96 2321-3131</span>
-                <span>contato@codar.com</span>
-            </div>
-
-            <div class="footer__socials">
-                <h2>Redes sociais</h3>
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-            </div>
-        </footer>
     </main>
+    <!-- FOOTER -->
+    <footer class="footer" id="Contato">
+        <div class="footer__codar">
+            <h1 class="footer__logo">Codar.</h1>
+            <p>Criamos websites incríveis</p>
+        </div>
 
-    
+        <div class="footer__about">
+            <h2>Sobre</h2>
+            <span>Amamos criar soluções <br> e entregar sites incríveis</span>
+        </div>
+
+        <div class="footer__contact">
+            <h2>Contato</h2>
+            <span>123 Av. Manjar - Nárnia</span>
+            <span>+55 96 2321-3131</span>
+            <span id="email">contato@codar.com</span>
+        </div>
+
+        <div class="footer__socials">
+            <h2>Redes sociais</h3>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+    </footer>
+
+
     <!-- SROLLREVEAL -->
-    <script src="#"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="assets/js/main.js"></script>
