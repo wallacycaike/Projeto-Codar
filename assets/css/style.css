@@ -321,12 +321,16 @@ img{
     line-height: 1.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer__codar{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -336,24 +340,24 @@ img{
 
 .footer__about{
     margin-bottom: 15px;
-    margin-left: 35px;
 }
 
 .footer__contact{
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-    margin-left: 35px;
+    
 }
 
-.footer__socials{
-    margin-left: 35px;
-}
+/* .footer__socials{
+    
+} */
 
 .footer__socials i{
     font-size: 50px;
     color: var(--cor-primaria);
-    margin: 10px 0px;
+    text-align: center;
+    padding: 10px;
 }
 
 #email{
@@ -388,6 +392,20 @@ img{
     padding: .80rem 4rem;
     border-radius: 3rem;
     transition: .4s;
+    }
+}
+
+@media screen and (min-width: 880px){
+    .footer{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        padding: 100px 0px;
+
+    }
+
+    .footer__socials i{
+        padding: 5px;
     }
 }
 
@@ -444,7 +462,8 @@ img{
         display: flex;
         flex-direction: row;
         gap: 4rem;
-        padding: 100px;
+        padding: 100px 0px;
+
     }
 
     .footer__codar{
